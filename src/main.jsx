@@ -9,26 +9,26 @@ import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 
 // Method 1 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    children: [
-      {
-        path: "",
-        element: <Home />
-      },
-      {
-        path: "about",
-        element: <About />
-      },
-      {
-        path: "contact",
-        element: <Contact />
-      }
-    ]
-  }
-])
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Root />,
+//     children: [
+//       {
+//         path: "",
+//         element: <Home />
+//       },
+//       {
+//         path: "about",
+//         element: <About />
+//       },
+//       {
+//         path: "contact",
+//         element: <Contact />
+//       }
+//     ]
+//   }
+// ])
 
 // Better way to create a router provider
 const router = createBrowserRouter(
