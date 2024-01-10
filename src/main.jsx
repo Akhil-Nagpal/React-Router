@@ -8,6 +8,7 @@ import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 
+// Method 1 
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +29,17 @@ const router = createBrowserRouter([
     ]
   }
 ])
+
+// Better way to create a router provider
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element= {<Root />}>
+      <Route path="" element= {<Home />} />
+      <Route path="about" element= {<About />} />
+      <Route path="contact" element= {<Contact />} />
+    </Route>
+  )
+)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
