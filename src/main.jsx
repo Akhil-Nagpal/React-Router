@@ -30,15 +30,13 @@ import Contact from './components/Contact/Contact.jsx'
 //   }
 // ])
 
-
-// Method 2 & better way
+// Method 2 & Better Way
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Root />} >
-      <Route path='' element={<Home />} />
-      <Route path='about' element={<About />} />
-      <Route path='contact' element={<Contact />} />
-
+    <Route path='/' element={<Root />}>
+      <Route path='' element={<Home />}/>
+      <Route path='about' element={<About />}/>
+      <Route path='contact' element={<Contact />}/>
     </Route>
   )
 )
